@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+   <style>
+      .multicolortext {
+        background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    </style>
+</head>
+
+<body>
+  <div id="changemybg"><div id="changemytext">
+    <table width="100%" border="0"><tr>
+<td align="center"><form name="bcolors">Background<br><select name="bgc" size="4" onchange="document.getElementById('changemybg').style.backgroundColor=bgc.options[selectedIndex].value"> 
+    <option value="#000000">Black </option> 
+    <option value="#444444">Charcoal </option> 
+    <option value="#000088">Dark Blue </option> 
+    <option value="#117722">Dark Green </option>
+   </select></form></td>
+<td align="center"><form name="tcolors">Text<br><select name="tc" size="4" onchange="document.getElementById('changemytext').style.color=tc.options[selectedIndex].value"> 
+    <option value="#FFFFFF">White </option> 
+    <option value="#F0F0FF">Light Blue </option> 
+    <option value="#FFFFD4">Light Yellow </option> 
+    <option value="#EEEEEE">Light Gray </option>    
+</select></form></td>
+</tr></table>
+  </div>
+    <script src="script.js"></script>
+  <h1><span class="multicolortext">LED Locker</span></h1>
+  <p>Welcome. This page is a way for you to buy some LEDs</p>
+  <div id="leds">
+    <div id="picture"><img src="leds.jpg" width=200px></div> 
+    <div id="photo"><img src="led.jpg" width=200px></div>
+    <div id="discription"><p>These LEDs are some of the best ones you can buy.</p></div>
+    </div>
+  <div id="reviews">
+    <div id="review">
+      <p id="name">Dave Earl  ⭐⭐⭐⭐⭐</p>
+      <p id="content"> I loved it! Great product and it gives your house/room a whole different look!! A+++</p>
+    </div>
+    <div id="review">
+      <p id="name">Linda Narin  ⭐⭐⭐⭐</p>
+      <p id="content"> I bought two of these strands. The first one went up perfect and looks great in child’s bedroom. Second strand wouldn’t stay up on the ends for some reason. Ended up using clear contact adhesive on the ends and for the power boxes to get them to stay up. Not a huge deal, just a delay.
+Lights are bright, kids love them!</p>
+    </div>
+    <div id="review">
+      <p id="name">Amy Griffen   ⭐</p>
+      <p id="content">I would give 5 stars but it’s something wrong with them when I turn them blue only had is lit and when it’s green red and yellow it stay blue on half a strip</p>
+    </div>
+  </div>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
